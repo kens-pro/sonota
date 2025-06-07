@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ピアノ購入で後悔しない！本体以外にかかる費用をプロが徹底解説 | 株式会社トリイ</title>
+    <!-- Google Fontsのインポート -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        /* --- 基本設定 --- */
+        :root {
+            --main-color: #333;
+            --accent-color: #c39143;
+            --background-color: #f9f8f6;
+            --white-color: #fff;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: var(--main-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Shippori Mincho B1', serif;
+            font-weight: 700;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .highlight {
+            background: linear-gradient(transparent 60%, var(--accent-color) 60%);
+            padding: 0 0.2em;
+        }
+
+        .emphasis {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* --- ヘッダー（ファーストビュー） --- */
+        .hero-header {
+            background-color: #4a4a4a;
+            color: var(--white-color);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .main-catch-copy {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+        }
+
+        /* --- セクション共通スタイル --- */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        
+        /* --- 2. 共感エリア（よくある疑問） --- */
+        .problem-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .problem-card {
+            background: var(--white-color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid var(--accent-color);
+        }
+
+        .problem-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .problem-text {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        /* --- 3. 問題提起 --- */
+        .solution-intro-section {
+            background-color: var(--white-color);
+            text-align: center;
+        }
+        .problem-solution-text {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* --- 4. 解決策提示：費用一覧 --- */
+        .cost-item-card {
+            background: var(--white-color);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .cost-sub-title {
+            font-size: 1.6rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .cost-sub-title i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+        
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .cost-table th, .cost-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .cost-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .cost-description {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .note {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .required-mark {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 10px;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: bold;
+        }
+
+        /* --- 5. シミュレーション --- */
+        .simulation-section {
+            background-color: #fdfaf4;
+        }
+        .simulation-box {
+            background: var(--white-color);
+            border: 2px dashed var(--accent-color);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .simulation-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .simulation-content {
+            font-size: 1.1rem;
+        }
+        .simulation-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .total-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        /* --- 6. まとめ --- */
+        .summary-section {
+            text-align: center;
+        }
+        .summary-message {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* --- フッター --- */
+        .footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 40px 0 20px 0;
+            font-size: 0.9rem;
+        }
+        .footer .container {
+            text-align: center;
+        }
+        .footer h3 {
+            color: var(--white-color);
+        }
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: var(--white-color);
+        }
+        .copyright {
+            margin-top: 30px;
+            border-top: 1px solid #555;
+            padding-top: 20px;
+        }
+        
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            .main-catch-copy {
+                font-size: 1.8rem;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .cost-sub-title {
+                font-size: 1.4rem;
+            }
+            .cost-item-card {
+                padding: 25px;
+            }
+            .total-price {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ヘッダー（ファーストビュー） -->
+    <header class="hero-header">
+        <div class="hero-content container">
+            <h1 class="main-catch-copy">ピアノ購入で後悔しないために<br>本体以外にかかる<span class="highlight">“本当の費用”</span></h1>
+            <p class="hero-subtitle">
+                「本体価格だけで予算を組んだけれど、思わぬ出費が…」<br>
+                そんなお悩みを解決するため、<span class="emphasis">プロが費用の全体像を解説します。</span>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. 共感エリア（よくある疑問） -->
+        <section class="section problem-section">
+            <div class="container">
+                <h2 class="section-title">ピアノ購入前、こんな疑問ありませんか？</h2>
+                <div class="problem-cards-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon"><i class="fas fa-yen-sign"></i></div>
+                        <h3 class="problem-text">ピアノっていくら<br>あれば買えるの？</h3>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon"><i class="fas fa-couch"></i></div>
+                        <h3 class="problem-text">リビングにそのまま<br>置けないって本当？</h3>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon"><i class="fas fa-box-open"></i></div>
+                        <h3 class="problem-text">ピアノ本体以外に<br>必ず必要なものは？</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 問題提起／解決への導線 -->
+        <section class="section solution-intro-section">
+            <div class="container">
+                <h2 class="section-title">実はピアノは、<span class="highlight">本体以外にもお金がかかります。</span><br>しっかり予算組みするための解決方法はこちら！</h2>
+                <p class="problem-solution-text">
+                    運送費や付属品、そして購入後のメンテナンス費用…。<br>
+                    これらを事前に知っておくことが、安心してピアノライフを始めるための第一歩です。
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. 解決策提示：ピアノの本体以外にかかる費用一覧 -->
+        <section class="section cost-list-section">
+            <div class="container">
+                <h2 class="section-title">ピアノ本体以外にかかる費用リスト</h2>
+
+                <!-- 4-1. 運送・据付・椅子 -->
+                <div class="cost-item-card">
+                    <h3 class="cost-sub-title"><i class="fas fa-truck"></i> 運送・据付料金（アップライトピアノ・電子ピアノ）</h3>
+                    <p class="note">※設置場所の階数や特殊作業（クレーンなど）の有無により料金は変動します。</p>
+                    <table class="cost-table">
+                        <thead>
+                            <tr><th></th><th>基本料</th><th>2階<br>(階段)</th><th>ユニック<br>(クレーン)</th><th>エレベーター</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>新品</td><td>¥24,200</td><td>¥13,200</td><td>¥13,200</td><td>¥3,300</td></tr>
+                            <tr><td>中古</td><td>¥15,400</td><td>¥9,350</td><td>¥11,000</td><td>¥3,300</td></tr>
+                            <tr><td>電子</td><td>¥8,800</td><td>¥3,300</td><td>¥11,000</td><td>¥1,100</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="cost-description">
+                        <h4><i class="fas fa-chair"></i> 椅子について</h4>
+                        <p>YUSYC(フリーストップ)・トムソン・背付など、多種多様です。中古ピアノには椅子は付属しません。<br>
+                        椅子はご使用者の体格に合わせられるよう、高さ調節できるものをお勧めします。（目安：20,000円〜30,000円）</p>
+                    </div>
+                </div>
+
+                <!-- 4-2. 必須・推奨の付属品 -->
+                <div class="cost-item-card">
+                    <h3 class="cost-sub-title"><i class="fas fa-star"></i> 必須・推奨の付属品</h3>
+                    <h4>インシュレーター <span class="required-mark">必須</span></h4>
+                    <p>床や畳を傷めないために必ず必要です。ピアノの重さを分散させ、安定させます。<br>
+                    例：プラスチック製インシュレーター(660円～)、防音・防振効果のある特殊インシュレーター(4,950円～)など</p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    <h4>カバー</h4>
+                    <p>ホコリや急な温度変化からピアノを守ります。<br>
+                    例：オールシーズン用トップカバー(4,180円～)、ピアノ全体に被せるオールカバー(約18,200円～)</p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    <h4>メトロノーム</h4>
+                    <p>正確なリズム感を養成するためのアイテムです。電子タイプもございます。<br>
+                    例：ゼンマイ式メトロノーム (4,950円～)、電子タイプ(2,970円～)</p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    <h4>お掃除用品</h4>
+                    <p>ピアノを美しく保つための専用ワックスやクロスです。<br>
+                    例：専用ワックス(8,369円～)、専用クロス(1,874円～)</p>
+                </div>
+
+                <!-- 4-3. 購入後のメンテナンス費用 -->
+                <div class="cost-item-card">
+                    <h3 class="cost-sub-title"><i class="fas fa-wrench"></i> 購入後のメンテナンス費用：調律</h3>
+                     <p>ピアノは、木材やフェルトなど天然素材でできているため、温度や湿度の影響で状態が変化します。良い音・良いタッチを保つために、定期的な調律が不可欠です。（※電子ピアノに調律は不要です）</p>
+                    <p class="cost-description">
+                        <strong>調律料金の目安</strong><br>
+                        ・アップライトピアノ: <strong>¥14,300</strong><br>
+                        ・グランドピアノ: <strong>¥17,600</strong>
+                    </p>
+                     <p class="note">推奨頻度：新品は環境に慣れるまで半年に一度、安定してくれば1年に一度。中古ピアノは1年に一度が目安です。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. シミュレーション例 -->
+        <section class="section simulation-section">
+            <div class="container">
+                <h2 class="section-title">【簡単シミュレーション】<br>実際にいくらかかる？</h2>
+                <div class="simulation-box">
+                    <h3 class="simulation-title">例：中古アップライトピアノ(330,000円)を1階リビングに入れる場合</h3>
+                    <div class="simulation-content">
+                        <ul>
+                            <li>ピアノ本体価格： ¥330,000</li>
+                            <li>中古ピアノ運送料： ¥15,400</li>
+                            <li>椅子(高さ調整付)： ¥28,000 (目安)</li>
+                            <li>その他付属品(インシュレーター、カバーなど)： ¥5,000 (目安)</li>
+                        </ul>
+                    </div>
+                    <div class="simulation-total">
+                        <span>合計（目安）</span>
+                        <div class="total-price">約 378,400<span style="font-size: 1.5rem;">円</span></div>
+                    </div>
+                    <p class="note" style="text-align: center; margin-top: 20px;">※上記に加え、10年間で約14万円の調律費用がかかることもご考慮ください。<br>※あくまで一例です。お客様の状況に合わせてお見積りいたします。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. まとめ -->
+        <section class="section summary-section">
+            <div class="container">
+                <h2 class="section-title">これらを、しっかり確認しましょう。</h2>
+                <p class="summary-message">ご予算や設置環境に合わせて、最適なプランをご提案します。<br>お気軽にご相談ください。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <h3>株式会社トリイ</h3>
+            <p>ご不明な点、ご相談などお気軽にお問い合わせください。</p>
+            <p>TEL: 0740-22-2063 | Email: <a href="mailto:info@toriimusic.co.jp">info@toriimusic.co.jp</a></p>
+            <div class="copyright">
+                <p>© 2023 株式会社トリイ. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
